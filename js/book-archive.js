@@ -6,12 +6,8 @@ const toggleDisplayContainer = displayStyle => {
     document.getElementById('display').style.display = displayStyle;
 };
 
-
-
-
+// Load Section
 const searchBooks = () => {
-    //Display spinner
-    
     const inputField = document.getElementById('input-field');
     const searchText = inputField.value;
     //Clear data
@@ -36,7 +32,7 @@ const searchBooks = () => {
         .then(data => displayBooks(data));
     }
 };
-
+// Display Section
 const displayBooks = books => {
     
     if (books.docs.length === 0) {
